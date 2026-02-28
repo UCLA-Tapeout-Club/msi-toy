@@ -1,7 +1,9 @@
 # MSI Cache Coherence Controller Toy
 
 ## Assignment Goals & Description
-The goal of this lab is to primarily expose you to modeling FSMs both graphically and in RTL. We'll model a 'Coherence Controller' designed for the 'MSI Protocol' ([https://en.wikipedia.org/wiki/Cache_coherence](https://en.wikipedia.org/wiki/Cache_coherence)). To provide some background, the coherence controller tells you whether a specific piece of data can be used, and is used in the context of multiprocessor CPUs. 
+The goal of this lab is to primarily expose you to modeling FSMs both graphically and in RTL. We'll model a 'Coherence Controller' designed for the 'MSI Protocol' ([https://en.wikipedia.org/wiki/Cache_coherence](https://en.wikipedia.org/wiki/Cache_coherence)). 
+
+To provide some background, the coherence controller tells you whether a specific piece of data can be used, and is utilized in multicore CPUs.
 
 Simply put, it makes sure that everyone is up-to-date on a piece of data (analogous to someone learning a piece of gossip, and then telling everyone about the new piece of data). Without a coherence controller, you wouldn't know if you're using old data (that has been now invalidated, as there is new gossip), using new data (you've just learned some new tea but haven't told anyone yet), or are up to date on the data (you learned the new gossip, shared it, and now everyone has the same tea).
 
