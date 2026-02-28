@@ -20,7 +20,7 @@ The MSI protocol refers to the states of your Coherence Controller FSM. There ar
 - I (Invalid)
 
 ### Module Inputs
-There will be four module inputs:
+There will be six module inputs:
 - `bus_read`
 - `bus_write`
 - `write`
