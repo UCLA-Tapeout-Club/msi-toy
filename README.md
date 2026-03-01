@@ -5,7 +5,9 @@ The goal of this lab is to primarily expose you to modeling FSMs both graphicall
 
 To provide some background, the coherence controller tells you whether a specific piece of data can be used, and is utilized in multicore CPUs. The specific cache coherence protocol we'll be modeling is known as 'MSI'. ([https://en.wikipedia.org/wiki/MSI_protocol](https://en.wikipedia.org/wiki/MSI_protocol))
 
-Simply put, it makes sure that everyone is up-to-date on a piece of data (analogous to someone learning a piece of gossip, and then telling everyone about the new piece of data). Without a coherence controller, you wouldn't know if you're using old data (that has been now invalidated, as there is new gossip), using new data (you've just learned some new tea but haven't told anyone yet), or are up to date on the data (you learned the new gossip, shared it, and now everyone has the same tea).
+Simply put, it makes sure that everyone is up-to-date on a piece of data (analogous to someone learning a piece of gossip, and then telling everyone about the new piece of data). 
+
+Without a coherence controller, you wouldn't know if you're using old data (that has been now invalidated, as there is new gossip), using new data (you've just learned some new tea but haven't told anyone yet), or are up to date on the data (you learned the new gossip, shared it, and now everyone has the same tea).
 
 Data can be referred to in any of these manners: 'clean' (you share the current up-to-date value of data), 'dirty' (you've modified the data, and no one else knows yet), or 'invalid' (your data is incorrect and old).
 
