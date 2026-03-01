@@ -76,4 +76,6 @@ Outputs should be 1-cycle pulses, corresponding to the synchronous inputs - you 
 
 Submit a drawing of the FSM. Demonstrate state transitions, and on each transition line, show the input that caused the change (i.e., on the S -> I line, write bus write to indicate that on bus write, we transition from Shared to Invalid).
 
-Additionally, submit your RTL code modeling the FSM. We will have our own testbench to verify your code, which will likely (?) be very simple and assertion based. You can also attempt to use formal verification methods, if you want to improve your DV skills (as you should).
+Submit your RTL code modeling the FSM. We will have our own testbench to verify your code, which will likely (?) be very simple and assertion based.
+
+Lastly, submit your own testbench that you feel sufficiently verifies your FSM. Use whatever methods you feel are valid (assertions, random assertions, formal methods, etc.). Obviously, your code should pass your own testbench.
