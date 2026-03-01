@@ -11,6 +11,7 @@ Data can be referred to in any of these manners: 'clean' (you share the current 
 
 ## Assignment Spec
 **Outputs must appear in the same cycle that your input appears. State updates on rising edge.**
+
 Additionally, utilize ENUMs for state description; while we didn't discuss it, they're not hard to implement and will save you from having to use magic numbers. Clean code is key, especially for debugging!
 
 ### States
