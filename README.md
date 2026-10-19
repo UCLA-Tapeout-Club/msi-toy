@@ -7,7 +7,7 @@ To provide some background, the coherence controller tells you whether a specifi
 
 Simply put, it makes sure that everyone is up-to-date on a piece of data (analogous to someone learning a piece of gossip, and then telling everyone about the new piece of data). 
 
-Without a coherence controller, you wouldn't know if you're using old data (that has been now invalidated, as there is new gossip), using new data (you've just learned some new tea but haven't told anyone yet), or are up to date on the data (you learned the new gossip, shared it, and now everyone has the same tea).
+Without a coherence controller, you wouldn't know if you're using old data (that has been now invalidated, as there is new gossip), using new data (you've just learned some new gossip but haven't told anyone yet), or are up to date on the data (you learned the new gossip, shared it, and now everyone has the same gossip).
 
 Data can be referred to in any of these manners: 'clean' (you share the current up-to-date value of data), 'dirty' (you've modified the data, and no one else knows yet), or 'invalid' (your data is incorrect and old).
 
